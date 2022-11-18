@@ -1,0 +1,4 @@
+# Ignore this files
+.DS_Store
+images/.DS_Store
+resources/.DS_Store
