@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Juan Sebastian Lopez Almirante</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
+    <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research</a>
+  <a href="cv.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CV</a>
+</div>
+
+  <!-- Main section-->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">
+      <h2 class="w3-wide w3-text-teal">Juan Sebastian Lopez Almirante - Research</h2>
+      <h4 class="w3-wide w3-light-grey" >Writing Sample</h4>
+
+    <h4> "<u><a href="https://www.dropbox.com/s/h5fy4fddzxtbp3s/Writing_Sample.pdf?dl=0" target="_blank">Dollarization and Default Risk in Emerging Economies</a></u>"</h4>
+    <h5 align="justify"><b>Abstract:</b>
+    This paper develops a small open economy model to study the interaction between dollarization and sovereign default.The adoption of a foreign currency demands for changes in real balances to be financed through either trade surplus or foreign debt issuance. In comparison with a non-dollarized regime, this alters the default set of the economy by affecting incentives to default for certain combinations of debt and output. How incentives to default are affected depends on the state of the economy in terms of level of indebtedness, real balances and output. I calibrate and solve the model using data from Ecuador which dollarized in 2000. In a quantitative exercise, I explore if dollarization played a role in the Ecuador’s default incentives. The results suggest that dollarization seems to have a more positive than negative effect on default incentives in the sense of inducing repayment more often than default conditional on the non-dollarized regime. However, replicating the Ecuadorian output process in the last two decades with appropriate initial conditions the model suggests that the dollarization had pervasive effects on default incentives leading to a higher probability of default than if it had not dollarized.</h5>
+    </div>
+  </div>
+
+
+
+  
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <!-- 
+  <button class="w3-button" onclick="window.open('https://github.com/LINK', '_blank')" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i>
+  <button class="w3-button" onclick="window.open('LINK', '_blank')" title="Twitter"><i class="fa fa-twitter w3-hover-opacity"></i>
+  -->
+  <button class="w3-button" onclick="window.location.href='mailto:juansebastianla@icloud.com'" title="Mail"><i class="fa fa-envelope w3-hover-opacity"></i>
+  <button class="w3-button" onclick="window.open('https://www.linkedin.com/in/juan-sebastian-lopez-almirante-042081120', '_blank')" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
