@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Sebastián López Almirante — Princeton Economics</title>
+<meta name="description" content="Juan Sebastián López Almirante is a PhD candidate in Economics at Princeton University working on macroeconomics, international economics, and finance.">
+<style>
+  :root {
+    --accent: #E77500;      /* Princeton orange */
+    --ink: #1f2428;
+    --muted: #5b6470;
+    --line: #e4e7eb;
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .inner {
+    max-width: 860px; margin: 0 auto; padding: .7rem 1.25rem;
+    display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center;
+  }
+  nav a { color: var(--ink); font-size: .95rem; font-weight: 500; }
+  nav a:hover { color: var(--accent); text-decoration: none; }
+  nav .name { font-weight: 700; margin-right: auto; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
+
+  header.hero { padding: 3.5rem 0 2.5rem; }
+  .hero-grid { display: flex; gap: 2.5rem; align-items: center; }
+  .hero img {
+    width: 190px; height: 190px; object-fit: cover; border-radius: 50%;
+    border: 3px solid var(--line); flex-shrink: 0;
+  }
+  .hero h1 { font-size: 2rem; line-height: 1.2; margin-bottom: .35rem; }
+  .hero .role { color: var(--muted); font-size: 1.05rem; margin-bottom: 1rem; }
+  .hero .bio { margin-bottom: 1.2rem; max-width: 56ch; }
+  .links { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .links a {
+    display: inline-block; padding: .4rem .9rem; border: 1.5px solid var(--accent);
+    border-radius: 999px; font-size: .9rem; font-weight: 600;
+  }
+  .links a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+  .links a.primary { background: var(--accent); color: #fff; }
+  .links a.primary:hover { filter: brightness(.92); }
+
+  section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-size: 1.35rem; margin-bottom: 1.4rem;
+    padding-left: .75rem; border-left: 4px solid var(--accent);
+  }
+
+  .paper { margin-bottom: 1.8rem; }
+  .paper:last-child { margin-bottom: 0; }
+  .paper h3 { font-size: 1.08rem; }
+  .paper .meta { color: var(--muted); font-size: .95rem; margin: .1rem 0 .4rem; }
+  .paper .paper-links { font-size: .95rem; font-weight: 600; }
+  .paper .paper-links a + a::before { content: "· "; color: var(--muted); font-weight: 400; padding: 0 .3rem; }
+  details { margin-top: .45rem; }
+  summary {
+    cursor: pointer; color: var(--accent); font-size: .95rem; font-weight: 600;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: " +"; }
+  details[open] summary::after { content: " −"; }
+  details p {
+    margin-top: .5rem; padding: .9rem 1.1rem; background: var(--bg-soft);
+    border-radius: 8px; font-size: .95rem; color: #333a42;
+  }
+
+  table.simple { border-collapse: collapse; width: 100%; }
+  table.simple td { padding: .35rem .8rem .35rem 0; vertical-align: top; }
+  table.simple td.year { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; width: 6.5rem; }
+
+  .edu-item { margin-bottom: .9rem; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-item .degree { font-weight: 600; }
+  .edu-item .detail { color: var(--muted); font-size: .95rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 2.5rem 0 3rem; }
+  footer h2 { margin-bottom: 1rem; }
+  address { font-style: normal; line-height: 1.7; }
+  .footnote { margin-top: 2rem; color: var(--muted); font-size: .85rem; }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .hero-grid { flex-direction: column; text-align: center; }
+    .hero .bio { text-align: left; }
+    .links { justify-content: center; }
+    table.simple td.year { width: 4.2rem; }
+    nav .inner { gap: .9rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="name" href="#top">J. S. López Almirante</a>
+    <a href="files/cv.pdf">CV</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div class="hero-grid">
+      <img src="images/avatar.jpg" alt="Portrait of Juan Sebastián López Almirante">
+      <div>
+        <h1>Juan Sebastián López Almirante</h1>
+        <p class="role">PhD Candidate in Economics · Princeton University</p>
+        <p class="bio">
+          I am a PhD candidate in Economics at Princeton University. My research interests are in
+          macroeconomics, international economics, and finance. I was born in Argentina, where I earned
+          a BA in Economics at Universidad Nacional de La Plata and an MA in Economics at
+          Universidad Torcuato Di Tella.
+        </p>
+        <div class="links">
+          <a class="primary" href="files/cv.pdf">Curriculum Vitae</a>
+          <a href="mailto:lopezalmirante@princeton.edu">Email</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <div class="degree">PhD in Economics, Princeton University</div>
+      <div class="detail">2023 – present · Expected completion: May 2028</div>
+    </div>
+    <div class="edu-item">
+      <div class="degree">MA in Economics, Universidad Torcuato Di Tella</div>
+      <div class="detail">2020 – 2023</div>
+    </div>
+    <div class="edu-item">
+      <div class="degree">BA in Economics, Universidad Nacional de La Plata</div>
+      <div class="detail">2015 – 2019 · Distinction; Manuel Belgrano Prize for Best Performance</div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+      <h3>A Fiscal Theory of Exchange Rates</h3>
+      <p class="meta">July 2026 · Draft available</p>
+      <p class="paper-links"><a href="files/a-fiscal-theory-of-exchange-rates.pdf">Paper (PDF)</a></p>
+      <details>
+        <summary>Abstract</summary>
+        <p>
+          Emerging market governments hold large stocks of U.S. dollar-denominated debt, while
+          local-currency bond markets are intermediated by global financiers with limited risk-bearing
+          capacity. I develop a Fiscal Theory of Exchange Rates (FTER) by embedding monetary-fiscal
+          interactions in a small open New-Keynesian economy with this structure. Three results emerge.
+          First, the conditions for monetary and fiscal dominance extend to the open economy, with
+          regime boundaries shifting with the currency composition of debt and market segmentation.
+          Second, under fiscal dominance, the exchange rate acquires a fiscal component: it adjusts to
+          satisfy the government's budget constraint through a valuation channel &mdash; revaluing dollar
+          liabilities &mdash; and a compensation channel, because global financiers require higher excess
+          returns as sovereign borrowing rises. Contractionary monetary policy therefore generates
+          depreciation and inflation rather than appreciation and disinflation. Third, the welfare cost
+          of fiscal dominance grows convexly with dollar-debt exposure and segmentation, while both are
+          essentially irrelevant under monetary dominance.
+        </p>
+      </details>
+    </div>
+
+    <div class="paper">
+      <h3>Dollarization and Default Risk: A Welfare Analysis</h3>
+      <p class="meta">with Pablo Andrés Neumeyer</p>
+      <p class="paper-links"><a href="files/dollarization-and-default-risk.pdf">Paper (PDF)</a></p>
+      <details>
+        <summary>Abstract</summary>
+        <p>
+          The welfare costs of dollarization trade off the benefit of lower inflation against the cost
+          of the loss of seignorage, the cost of the initial open market operation to purchase the money
+          supply, and the increased probability of default induced by the first two. We evaluate the
+          welfare costs of dollarization in a small open economy model of defaultable debt with money
+          and international reserves calibrated to Ecuador, which dollarized in 2000. The welfare cost
+          of dollarization in an economy with 20% of debt-to-GDP can be as high as 1.75% of permanent
+          consumption. This cost can be expressed in terms of a break-even permanent level of inflation
+          that increases non-linearly between 40% and 275% with the stock of initial debt. We also
+          compute conditional default probabilities between a dollarized and a local currency economy
+          and find that dollarization can lead to increased default incentives, particularly in the
+          short run, highlighting that the initial stocks of debt, reserves and money matter.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <table class="simple">
+      <tr><td class="year">2026</td><td>TA, Corporate Finance (Undergraduate, Princeton University)</td></tr>
+      <tr><td class="year">2025</td><td>TA, Junior Paper Writing Workshop (Undergraduate, Princeton University)</td></tr>
+      <tr><td class="year">2023</td><td>TA, Microeconomic Theory &amp; Probability Theory (Graduate, Universidad Torcuato Di Tella)</td></tr>
+      <tr><td class="year">2022</td><td>TA, Money and Banking (Undergraduate, Universidad Torcuato Di Tella)</td></tr>
+      <tr><td class="year">2021</td><td>TA, Macroeconomics (Undergraduate, Universidad Torcuato Di Tella)</td></tr>
+      <tr><td class="year">2019</td><td>TA, Industrial Organization (Undergraduate, Universidad Nacional de La Plata)</td></tr>
+      <tr><td class="year">2018</td><td>TA, Calculus &amp; Econometrics (Undergraduate, Universidad Nacional de La Plata)</td></tr>
+    </table>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <address>
+      <a href="mailto:lopezalmirante@princeton.edu">lopezalmirante@princeton.edu</a><br>
+      (609) 255-3747<br><br>
+      Julis Romo Rabinowitz Building<br>
+      Department of Economics<br>
+      Princeton University<br>
+      Princeton, NJ 08544
+    </address>
+    <p class="footnote">Last updated July 2026.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
